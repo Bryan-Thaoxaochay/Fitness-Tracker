@@ -1,5 +1,17 @@
 const router = require('express').Router();
+const path = require('path');
 // Require model
+const Workout = require('../models/workout');
+
+// Render stats
+router.get('/stats', function (req, res) {
+    res.sendFile(path.join('C:/Users/bthao/OneDrive/desktop/Fitness-Tracker/public/stats.html'));
+});
+
+// Render exercise
+router.get('/exercise', function (req, res) {
+    res.sendFile(path.join('C:/Users/bthao/OneDrive/desktop/Fitness-Tracker/public/exercise.html'));
+})
 
 // Add exercises to recent workout plan
 

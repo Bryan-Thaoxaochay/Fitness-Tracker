@@ -6,7 +6,7 @@ The app allows us to keep track and update our workouts.
 
 ## Technologies Used
 
-JavaScript, Node.js, express.js, CSS, mongoDB, mongoose, indexedDB 
+JavaScript, Node.js, Express, CSS, mongoDB, Mongoose, indexedDB 
 
 ## Screenshots
 
@@ -25,7 +25,9 @@ https://github.com/Bryan-Thaoxaochay/Fitness-Tracker
 ## What I Learned
 
 ### List
-1. 
+1. Mongoose Schemas
+
+2. Adding Data via VSCode
 
 ## Contact Information
 
