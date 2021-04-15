@@ -20,8 +20,13 @@ router.get('/', function (req, res) {
 
 // Add exercises to recent workout plan
 router.put('/api/workouts/:id', ({ body }, res) => {
-    Workout.find({})
-        .sort({ day: -1 })
+    Workout.create(body)
+        .then(dbExercise => {
+            res.json(dbExercise);
+        })
+        .catch(err => {
+            res.status(400).json(err);
+        });
 });
 
 // // Add new exercises to new workout plan
