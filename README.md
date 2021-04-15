@@ -31,6 +31,8 @@ https://github.com/Bryan-Thaoxaochay/Fitness-Tracker
 
 3. Rendering HTML Files
 
+4. Mongoose CRUD
+
 ## Contact Information
 
 Email: bthaoxaochay@gmail.com
@@ -43,13 +45,4 @@ localhost:3000/stats
 - pie chart with exercises performed and percentages
 
 clicking home page
-- most recent id is entered into localhost:3000/?id=...
 - last workout is given with stats of date, workout duration, exercises performed, total weight lifted, total sets performed, and total reps performed
-
-continue workout
-- need that stuff to appear
-
-new workout
-- new exercise id created and given in localhost:3000/exercise?id=...
-- need that stuff to appear
-- returned back to route
