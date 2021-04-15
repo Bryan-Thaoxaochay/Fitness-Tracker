@@ -19,7 +19,7 @@ router.get('/', function (req, res) {
 });
 
 // Add exercises to recent workout plan
-router.put('/api/workouts/' + id, ({ body }, res) => {
+router.put('/api/workouts/:id', ({ body }, res) => {
     Workout.find({})
         .sort({ day: -1 })
 });
