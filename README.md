@@ -33,6 +33,8 @@ https://github.com/Bryan-Thaoxaochay/Fitness-Tracker
 
 4. Mongoose CRUD
 
+5. MongoDB Atlas and Heroku Deployment
+
 ## Contact Information
 
 Email: bthaoxaochay@gmail.com
@@ -45,4 +47,4 @@ localhost:3000/stats
 - pie chart with exercises performed and percentages
 
 clicking home page
-- last workout is given with stats of date, workout duration, exercises performed, total weight lifted, total sets performed, and total reps performed
+- last workout is given with workout duration
