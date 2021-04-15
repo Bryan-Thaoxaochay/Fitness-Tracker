@@ -1,22 +1,5 @@
 const router = require('express').Router();
-const path = require('path');
-// Require model
 const Workout = require('../models/workout');
-
-// // Render stats.html
-// router.get('/stats', function (req, res) {
-//     res.sendFile(path.join('C:/Users/bthao/OneDrive/desktop/Fitness-Tracker/public/stats.html'));
-// });
-
-// // Render exercise.html
-// router.get('/exercise', function (req, res) {
-//     res.sendFile(path.join('C:/Users/bthao/OneDrive/desktop/Fitness-Tracker/public/exercise.html'));
-// });
-
-// // Render index.html
-// router.get('/', function (req, res) {
-//     res.sendFile(path.join('C:/Users/bthao/OneDrive/desktop/Fitness-Tracker/public/index.html'));
-// });
 
 // Add exercises to recent workout plan
 router.put('/api/workouts/:id', ({ body }, res) => {
@@ -52,7 +35,7 @@ router.get('/api/workouts/range', (req, res) => {
 });
 
 // Getting latest workout
-router.get('/api/workouts', ({ body }, res) => {
+router.get('/api/workouts', (req, res) => {
     Workout.find({})
         .sort({ day: -1 })
         .then(dbWorkout => {
