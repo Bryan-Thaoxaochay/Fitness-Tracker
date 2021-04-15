@@ -27,7 +27,9 @@ https://github.com/Bryan-Thaoxaochay/Fitness-Tracker
 ### List
 1. Mongoose Schemas
 
-2. Adding Data via VSCode
+2. Adding Data via VSCode Seeds
+
+3. Rendering HTML Files
 
 ## Contact Information
 
