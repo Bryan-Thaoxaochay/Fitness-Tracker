@@ -29,16 +29,16 @@ router.put('/api/workouts/:id', ({ body }, res) => {
         });
 });
 
-// // Add new exercises to new workout plan
-// router.post('/api/workouts', ({ body }, res) => {
-//     Workout.create(body)
-//         .then(dbWorkout => {
-//             res.json(dbWorkout);
-//         })
-//         .catch(err => {
-//             res.status(400).json(err);
-//         });
-// });
+// Add new exercises to new workout plan
+router.post('/api/workouts', ({ body }, res) => {
+    Workout.create(body)
+        .then(dbWorkout => {
+            res.json(dbWorkout);
+        })
+        .catch(err => {
+            res.status(400).json(err);
+        });
+});
 
 // Getting numbers for stats
 router.get('/api/workouts/range', (req, res) => {
